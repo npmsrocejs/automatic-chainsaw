@@ -34,7 +34,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Bump version ${{ github.event.release.tag_name }}'
-          file_pattern: package.json package-lock.json .installed tea.yaml
+          file_pattern: package.json package-lock.json
           push_options: --force
 
       - name: Change tag reference
